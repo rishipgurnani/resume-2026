@@ -1,0 +1,128 @@
+% Sexy two-column CV using the altacv look
+% Compile with XeLaTeX or LuaLaTeX on Overleaf
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{fontspec}                  % for nice fonts
+\usepackage{parskip}
+\setmainfont{TeX Gyre Heros}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+
+% layout: two columns with sidebar feel
+\usepackage{multicol}
+\setlength{\columnsep}{20pt}
+\setlength{\parskip}{4pt}
+\setlength{\itemsep}{2pt}
+
+% header styling
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\scshape}{\thesection}{1em}{}
+\titlespacing*{\section}{0pt}{6pt}{6pt}
+
+% small helper commands
+\newcommand{\job}[3]{\noindent\textbf{#1} \hfill {\small #2}\\ \textit{#3}\vspace{4pt}\par}
+\newcommand{\ed}[3]{\noindent\textbf{#1} \hfill {\small #2}\\ {\small #3}\vspace{4pt}\par}
+
+% colors
+\definecolor{accent}{HTML}{0B6FA4} % change this for different accent color
+
+% start document
+\begin{document}
+
+% ===== Header =====
+\begin{center}
+    {\Huge \bfseries DR. RISHI GURNANI} \\[0.4cm]
+    \small
+    U.S. Citizen \quad $|$ \quad $>$1,800 Academic Citations \quad $|$ \quad h-index: 15 \\[4pt]
+    \href{mailto:rishipgurnani@gmail.com}{rishipgurnani@gmail.com} \quad $|$ \quad \href{https://rishigurnani.github.io}{Personal Website} \quad $|$ \quad \href{https://github.com/rishigurnani}{GitHub}
+\end{center}
+
+\vspace{8pt}
+\hrule
+\vspace{8pt}
+
+% Two-column body
+\begin{multicols}{2}
+\raggedcolumns
+
+% ---------------- Left column (primary) ----------------
+\section*{SUMMARY}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Deep Learning Expert \& Software Engineer} with a Ph.D. and 5+ years of industry experience. Proven track record of developing \textbf{novel model architectures} (GNNs, Multitask Learning) and shipping end-to-end enterprise platforms used by 1,000+ global users.
+  \item \textbf{Full-Stack ML Proficiency:} Expert in the entire lifecycle—from data collection to custom architectures, training loops, and loss functions to high-performance deployment and visualizations.
+  \item \textbf{Strategic Communicator:} Experienced in leading technical teams and translating complex algorithmic "why" into value for stakeholders. Delivered the \textbf{2024 RISE Keynote} on AI-driven discovery.
+\end{itemize}
+
+\section*{KEY HIGHLIGHTS}
+\begin{itemize}[leftmargin=*]
+  \item Discovered polymer dielectric with energy density \textgreater 11x commercial competitors.
+  \item Multiple Nature papers on AI-assisted polymer design and high-temperature dielectrics.
+  \item Experience across end-to-end ML: data discovery, model prototyping, testing, deployment, and dashboarding.
+\end{itemize}
+
+\section*{WORK EXPERIENCE}
+\job{Senior Manager, Artificial Intelligence — {\small Coca-Cola}}{Feb 2025 -- present}{Atlanta, GA}
+\begin{itemize}[leftmargin=*]
+  \item Built fit-for-purpose ML solutions; emphasis on explainability and robust validation.
+  \item Led projects: beverage color prediction, recommendation systems, model ensembling; automated discovery of novel beverage ingredients.
+  \item Applied NLP, sentence embeddings, and prompt engineering for LLM-based structured data extraction at scale.
+\end{itemize}
+
+\job{Director, Software Engineering \& Algorithms — {\small Matmerize Inc.}}{Mar 2021 -- Feb 2025}{Atlanta, GA}
+\begin{itemize}[leftmargin=*]
+  \item Engineered an enterprise-scale Deep Learning backend from scratch ($>$100k LOC), enabling 1,000+ users to train and deploy custom models \textbf{autonomously}.
+  \item Owned the E2E pipeline: architecture design, custom loss functions, feature engineering, and data augmentation; prioritized \textbf{Object-Oriented Programming (OOP)} for modular, maintainable code.
+  \item Architected high-performance data-loading and parallel processing pipelines for web-scraped and proprietary datasets, ensuring seamless AWS deployment and model scalability.
+  \item Implemented rigorous \textbf{automated testing} (Pytest, Vitest) and CI/CD workflows, reducing code regressions and hardening models for production-grade reliability.
+\end{itemize}
+
+\section*{EDUCATION}
+\ed{Ph.D., Materials Science \& Engineering}{Georgia Institute of Technology}{2019 -- 2023, Atlanta, GA — GPA: 4.00}
+\textit{\small Dissertation: \href{https://rishigurnani.github.io/resume/resume.pdf}{Advances in AI for Accelerated Discovery of Energy Storage Polymers} (Specialization in GNNs)}\\
+\ed{M.S., Computer Science}{Georgia Institute of Technology}{Specialization in Machine Learning}
+\ed{B.S., Materials Science \& Engineering}{University of California, Berkeley}{2014 -- 2018}
+
+\section*{SELECT PUBLICATIONS}
+\begin{itemize}[leftmargin=*]
+  \item \href{https://www.nature.com/articles/s41467-024-50413-x}{``AI-assisted discovery of high-temperature dielectrics for energy storage''} — \textit{Nature}. (Discovered polymer with energy density >11x commercial).
+  \item \href{https://www.nature.com/articles/s41578-024-00708-8}{``Design of functional and sustainable polymers assisted by AI''} — \textit{Nature}.
+  \item \href{https://pubs.acs.org/doi/full/10.1021/acs.chemmater.2c02991}{``polyGNN: Multitask graph neural networks for polymer informatics''} (2023).
+  \item Full list: \href{https://rishigurnani.github.io/#publications}{on website}.
+\end{itemize}
+
+\section*{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Deep Learning/ML:} PyTorch, HuggingFace, GNNs, Physics-Informed ML, Transformers, Multitask Learning, Model Ensembling, RDKit.
+  \item \textbf{Testing \& Reliability:} \textbf{Obsessed with code hardening}; expert in \textbf{Pytest, Vitest, Cypress, Selenium, Playwright}.
+  \item \textbf{Demos/Frontend:} React, D3.js, Flask, Plotly, Streamlit, Tkinter.
+\end{itemize}
+
+\section*{AWARDS \& TALKS}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Keynote Speaker}, \href{https://www.riseconf.net/}{2024 RISE Conference}.
+  \item \textbf{Best Ph.D. Thesis}, Georgia Tech Sigma Xi (2024).
+  \item \textbf{MRS Graduate Award} (2023).
+  \item \textbf{Gold Medal}, \href{https://rishigurnani.files.wordpress.com/2022/12/polyg2g_eiif.pdf}{2nd Energy \& Informatics Forum} (2022).
+\end{itemize}
+
+\section*{ADDITIONAL WRITINGS \& PROJECTS}
+\begin{itemize}[leftmargin=*]
+  \item \href{https://rishigurnani.files.wordpress.com/2021/08/polyg2g-a-novel-machine-learning-algorithm-applied-to-the-generative-design-of-polymer-dielectrics.pdf}{polyG2G: Generative design of polymer dielectrics}.
+  \item \href{https://arxiv.org/abs/2409.05240}{Physics-Enforced Neural Network for polymer melt viscosity (2024)}.
+  \item \href{https://www.nature.com/articles/s41524-024-01373-9}{Gas permeability: Multi-task ML (2024)}.
+\end{itemize}
+
+\section*{SELECT MEDIA}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Podcast:} \href{https://www.youtube.com/watch?v=srLJlK67tXc&t=6s&themeRefresh=1}{``Predicting Properties of New Polymers''} — \textit{It's a Material World} (2023).
+  \item \textbf{Training:} \href{https://www.youtube.com/watch?v=TFWYoZoezrY}{``Debugging Neural Networks''} — nanoHUB (2021).
+\end{itemize}
+
+\vfill
+\small
+
+\end{multicols}
+\end{document}
