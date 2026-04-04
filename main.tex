@@ -10,6 +10,8 @@
 \usepackage{xcolor}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=blue}
+\usepackage{fontawesome5} % Required for the GitHub icon
+\usepackage{amssymb}      % Required for the star symbol
 
 % layout: two columns with sidebar feel
 \usepackage{multicol}
@@ -51,23 +53,38 @@
 % ---------------- Left column (primary) ----------------
 \section*{SUMMARY}
 \begin{itemize}[leftmargin=*]
-  \item \textbf{Deep Learning Expert \& Software Engineer} with a Ph.D. and 5+ years of industry experience. Proven track record of developing \textbf{novel model architectures} (GNNs, Multitask Learning) and shipping end-to-end enterprise platforms used by 1,000+ global users.
+  \item \textbf{Deep Learning Expert \& Software Engineer} with a Ph.D. and 5+ years of industry experience. Proven track record of developing \textbf{novel model architectures} and shipping end-to-end enterprise platforms used by 1,000+ global users.
   \item \textbf{Strategic Communicator:} Experienced in leading technical teams and translating complex algorithmic "why" into value. Delivered the \textit{2024 RISE Keynote} on AI-driven discovery. Experienced in stakeholder management or, as I call it, ``the art of projecting confidence and minimizing confusion''.
 \end{itemize}
 
 \section*{KEY HIGHLIGHTS}
 \begin{itemize}[leftmargin=*]
-  \item Discovered polymer dielectric with energy density \textgreater 11x commercial competitors.
-  \item Multiple Nature papers on AI-assisted polymer design and high-temperature dielectrics.
-  \item Experience across end-to-end ML: data discovery, model prototyping, testing, deployment, and dashboarding.
+  \item \textbf{High-Impact Research:} Developed Generative AI algorithms for chemical discovery to screen $>200$ million structures and identify four hits; one successfully validated as a breakthrough polymer dielectric in the wet lab with an energy density \textbf{$>11\times$} that of commercial competitors. \href{https://www.nature.com/articles/s41467-024-50413-x}{[Paper]}
+  \item \textbf{Top-Tier Publications:} Authored multiple \textit{Nature} papers on AI-driven discovery of polymeric materials. \href{https://www.nature.com/articles/s41467-024-50413-x}{[Paper 1]} \href{https://www.nature.com/articles/s41578-024-00708-8}{[Paper 2]}
+  \item \textbf{Open Source Development (Pre ChatGPT):} Developed from scratch \texttt{polygnn\_trainer}, a Pytorch library for automated ML training in polymer informatics. \quad
+  \href{https://github.com/rishigurnani/polygnn_trainer}{\faGithub\ GitHub} \quad (8 stars $\bigstar$)
+  \item \textbf{Open Source Development (Current):} In my free time, I'm building \texttt{fintracker}, the pandas and numpy of personal finance \quad 
+  \href{https://github.com/rishigurnani/fintracker}{\faGithub\ GitHub}
+\end{itemize}
+
+\section*{EDUCATION}
+\ed{Ph.D., Materials Science \& Engineering}{Georgia Institute of Technology}{2019 -- 2023, Atlanta, GA — GPA: 4.00}
+\textit{\small Dissertation: Advances in AI for Accelerated Discovery of Energy Storage Polymers (Specialization in GNNs)}\\
+\ed{M.S., Computer Science}{Georgia Institute of Technology}{Specialization in Machine Learning}
+\ed{B.S., Materials Science \& Engineering}{University of California, Berkeley}{2014 -- 2018}
+
+\section*{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Deep Learning Theory:} Generative/Predictive ML, (Un)supervised learning, semi- and self-supervised learning, PyTorch, GNNs, Physics-Informed ML, Multitask Learning, Model Ensembling
+  \item \textbf{Programming Main:} Git, PyTorch, PyTorch Geometric, Pytest, RDKit, Numpy, Playwright, FastAPI
+  \item \textbf{Programming Other:} HuggingFace, SentenceTransformers, Sympy, Selenium, Pandas, Flask, Plotly, Streamlit, Tkinter, SciPy, Scikit-learn, React, D3.js, Vitest, Cypress
 \end{itemize}
 
 \section*{WORK EXPERIENCE}
 \job{Senior Manager, Artificial Intelligence — {\small Coca-Cola}}{Feb 2025 -- present}{Atlanta, GA}
 \begin{itemize}[leftmargin=*]
     \item \textbf{Full-Stack ML Proficiency:} Expert in the entire lifecycle—from data collection to custom architectures, training loops, and loss functions to high-performance deployment and visualizations.
-  \item \textbf{Led projects:} color prediction for new beverages (value: people drink with their eyes), recommendation systems for personalized beverages, automated discovery of novel bioactive ingredients via clinical informatics.
-  \item \textbf{Tech stack:} FastAPI, HuggingFace, SentenceTransformers, Scikit-Learn, custom algorithms (PyTorch, Numpy, SciPy)
+  \item \textbf{Led projects:} color prediction for new beverages (value: humans drink with their eyes), recommendation systems for personalized beverages, automated discovery of novel bioactive ingredients via clinical informatics.
 \end{itemize}
 
 \job{Director, Software Engineering \& Algorithms — {\small Matmerize Inc.}}{Mar 2021 -- Feb 2025}{Atlanta, GA}
@@ -78,25 +95,14 @@
   \item Implemented rigorous \textbf{automated testing} (Pytest, Vitest) and CI/CD workflows, reducing code regressions and hardening models for production-grade reliability.
 \end{itemize}
 
-\section*{EDUCATION}
-\ed{Ph.D., Materials Science \& Engineering}{Georgia Institute of Technology}{2019 -- 2023, Atlanta, GA — GPA: 4.00}
-\textit{\small Dissertation: Advances in AI for Accelerated Discovery of Energy Storage Polymers (Specialization in GNNs)}\\
-\ed{M.S., Computer Science}{Georgia Institute of Technology}{Specialization in Machine Learning}
-\ed{B.S., Materials Science \& Engineering}{University of California, Berkeley}{2014 -- 2018}
-
-\section*{SELECT PUBLICATIONS}
+\section*{TOP 5 PUBLICATIONS (OUT OF 16)}
 \begin{itemize}[leftmargin=*]
   \item \href{https://www.nature.com/articles/s41467-024-50413-x}{``AI-assisted discovery of high-temperature dielectrics for energy storage''} — \textit{Nature}. (Discovered polymer with energy density >11x commercial).
   \item \href{https://www.nature.com/articles/s41578-024-00708-8}{``Design of functional and sustainable polymers assisted by AI''} — \textit{Nature}.
   \item \href{https://pubs.acs.org/doi/full/10.1021/acs.chemmater.2c02991}{``polyGNN: Multitask graph neural networks for polymer informatics''} (2023).
+  \item \href{https://rishigurnani.files.wordpress.com/2021/08/polyg2g-a-novel-machine-learning-algorithm-applied-to-the-generative-design-of-polymer-dielectrics.pdf}{polyG2G: Machine learning applied to generative design of polymer dielectrics} (2021). \textit{Pioneered a generative ML algorithm for materials design.}
+  \item \href{https://rishigurnani.wordpress.com/wp-content/uploads/2020/11/5.0023759.pdf}{Machine-learning predictions of polymer properties with Polymer Genome} (2020).
   \item Full list: \href{https://rishigurnani.github.io/#publications}{on website}.
-\end{itemize}
-
-\section*{TECHNICAL SKILLS}
-\begin{itemize}[leftmargin=*]
-  \item \textbf{Deep Learning/ML:} PyTorch, HuggingFace, GNNs, Physics-Informed ML, Transformers, Multitask Learning, Model Ensembling, RDKit.
-  \item \textbf{Testing \& Reliability:} \textbf{Obsessed with code hardening}; expert in \textbf{Pytest, Vitest, Cypress, Selenium, Playwright}.
-  \item \textbf{Demos/Frontend:} React, D3.js, Flask, Plotly, Streamlit, Tkinter.
 \end{itemize}
 
 \section*{AWARDS \& HONORS}
@@ -116,15 +122,6 @@
   \item \textbf{Invited Speaker:} \href{https://rishigurnani.files.wordpress.com/2022/12/polyg2g_eiif.pdf}{``polyG2G: ML Algorithm for Generative Design of Polymer Dielectrics''} — \textit{2nd Energy \& Informatics International Forum, Tokyo Institute of Technology} (2022).
   \item \textbf{Invited Speaker:} \textit{Materials Machine Learning Symposium, Sandia National Laboratory} (2021).
   \item \textbf{Invited Speaker:} \href{https://www.youtube.com/watch?v=TFWYoZoezrY}{``Debugging Neural Networks''} — \textit{Hands-on Data Science \& ML Training Series, nanoHUB} (2021).
-\end{itemize}
-
-\section*{ADDITIONAL PUBLICATIONS}
-\begin{itemize}[leftmargin=*]
-  \item \href{https://arxiv.org/abs/2409.05240}{\textbf{A Physics-Enforced Neural Network to Predict Polymer Melt Viscosity}} (2024). \textit{Integrated domain physics into neural network architectures to improve prediction reliability.}
-  \item \href{https://www.nature.com/articles/s41524-024-01373-9}{\textbf{Gas permeability, diffusivity, and solubility in polymers: Simulation-experiment data fusion and multi-task ML}} (2024).
-  \item \href{https://rishigurnani.files.wordpress.com/2021/08/polyg2g-a-novel-machine-learning-algorithm-applied-to-the-generative-design-of-polymer-dielectrics.pdf}{\textbf{polyG2G: Machine learning applied to generative design of polymer dielectrics}} (2021). \textit{Pioneered a generative ML algorithm for materials design.}
-  \item \href{https://rishigurnani.wordpress.com/wp-content/uploads/2021/05/acs.chemmater.0c04729.pdf}{\textbf{Interpretable ML-based predictions in metal–organic frameworks}} (2020).
-  \item \href{https://rishigurnani.wordpress.com/wp-content/uploads/2020/11/5.0023759.pdf}{\textbf{Machine-learning predictions of polymer properties with Polymer Genome}} (2020).
 \end{itemize}
 
 \vfill
