@@ -1,7 +1,3 @@
-% Dr. Rishi Gurnani — Resume v5
-% Target: NVIDIA — AI for Chemistry & Materials, Developer Relations / Research Partnerships
-% Compile with XeLaTeX or LuaLaTeX on Overleaf
-
 \documentclass[10pt,letterpaper]{article}
 
 \usepackage[top=0.65in, bottom=0.65in, left=0.75in, right=0.75in]{geometry}
@@ -55,25 +51,23 @@
 
 % ── Summary ──────────────────────────────────────────────────────────────────
 \section{Summary}
-\textbf{Brief:} 12+ years experience in materials chemistry; 10+ years experience in computer programming; 8+ years experience in deep learning; 8+ experience in research; 2+ years experience as a data science people leader \\\\
-\textbf{Long:} AI researcher and engineer specializing in generative modeling and deep learning for chemistry
-and materials science. Ph.D.\ from Georgia Tech; 16 publications ($>$1,900 citations, h-index 15),
-including first-author papers in \textit{Nature Communications} and \textit{Chemistry of Materials}.
-Proven ability to communicate complex AI methods to both technical and non-technical audiences —
-as a people leader, keynote speaker, podcast guest, and invited lecturer at universities and national labs.
-Deep familiarity with the academic and research ecosystem in AI for materials discovery.
+
+Principal-level Data Scientist and Software Engineer with a Ph.D.\ and 5$+$ years of
+industry experience. Expert across the full data science lifecycle — data acquisition,
+statistical modeling, deep learning architecture, and cloud-based production deployment —
+with first-author papers published in \textit{Nature}. Four years as primary technical advisor and
+solution architect for $>$20 enterprise clients. Keynote speaker; 16 publications; expert in deep learning.
 
 % ── Core Competencies ────────────────────────────────────────────────────────
 \section{Core Competencies}
 
 \renewcommand{\arraystretch}{1.3}
 \begin{tabularx}{\linewidth}{@{} >{\bfseries\small}p{0.21\linewidth} X @{}}
-  Generative AI       & VAE, GAN, graph-based generative models; applied to molecular and polymer design \\
-  Deep Learning       & GNNs, multitask learning, physics-informed ML, model ensembling, inference optimization \\
-  Statistical         & Regression, classification, uncertainty quantification, feature engineering \\
-  Research Ecosystem  & Active knowledge of leading labs, researchers, and open problems in AI for chemistry \& materials \\
-  Programming         & Python, PyTorch, PyTorch Geometric, NumPy, Scikit-learn, Pandas, FastAPI, HuggingFace, PyTest \\
-  Open Source         & \lbox{https://github.com/rishigurnani/polygnn_trainer}{\texttt{polygnn\_trainer}} (PyTorch ML training library, adopted by materials informatics community) \\
+  Deep Learning   & Generative AI (VAE, GAN), GNNs, multitask learning, model ensembling, inference optimization \\
+  Statistical     & Regression, classification, uncertainty quantification, feature engineering \\
+  Cloud \& MLOps  & Cloud-based deployment and data pipelines, end-to-end ML lifecycle management \\
+  Data Governance & Acquisition strategy, cleaning standards, scraping, compression \\
+  Programming     & Python, PyTorch, PyTorch Geometric, NumPy, Scikit-learn, Pandas, FastAPI, HuggingFace, PyTest \\
 \end{tabularx}
 
 % ── Work Experience ───────────────────────────────────────────────────────────
@@ -81,9 +75,9 @@ Deep familiarity with the academic and research ecosystem in AI for materials di
 
 \role{Senior Manager, Data Science for Global Ingredient Research — Coca-Cola}{Feb 2025 – present}{Atlanta, GA}
 \begin{itemize}
-  \item Developing AI strategy and writing core algorithms for global R\&D in the following areas: sweetener application, functional ingredients for wellness, flavors, emulsifiers
-  \item Algorithm stack: Sentence Transformers, LLMs, PLS Regression, Rule-based recommendation systems
-  \item Tech Stack: OpenAI, PyTorch, Scikit-Learn, FastAPI, HuggingFace
+  \item Leading three major end-to-end AI projects from data acquisition through cloud-based deployment:
+    (1) multi-modal sensory prediction for beverage formulation, (2) personalized beverage recommendation systems,
+    and (3) agentic generative ML for bioactive ingredient discovery.
 \end{itemize}
 
 \vspace{5pt}
@@ -91,19 +85,14 @@ Deep familiarity with the academic and research ecosystem in AI for materials di
 \role{Director of Software Engineering \& Algorithms — Matmerize Inc.}{Mar 2021 – Feb 2025}{Atlanta, GA}
 \vspace{3pt}
 \begin{itemize}
-  \item Developed the deep learning core of PolymRize$^{\text{TM}}$, an enterprise ML platform
-    ($\sim$100K lines of code, 5 languages) adopted by $>$20 research organizations and companies.
+  \item Sole developer of the deep learning core of our SaaS platform PolymRize$^{TM}$ ($\sim$100K lines of code, 5 languages)
+    serving $>$1,000 users across $>$20 organizations.
 
-  \item Served as primary technical point of contact for academic and industry partners,
-    translating research needs into software capabilities and communicating algorithmic methods
-    to audiences ranging from wet-lab chemists to ML engineers.
-
-  \item Mentored junior developers and interns; alumni now at \textbf{Meta}, 
-    \textbf{UC Berkeley (PhD)}, and \textbf{Georgia Tech (PhD)}.
+  \item Managed a high-performing team of junior developers and interns, with alumni now in elite industry
+    and academic roles, including \textbf{Meta}, \textbf{UC Berkeley (PhD)}, and \textbf{Georgia Tech (PhD)}.
 \end{itemize}
 
 % ── Education ─────────────────────────────────────────────────────────────────
-\newpage
 \section{Education}
 
 \begin{tabularx}{\linewidth}{@{} X r @{}}
@@ -146,13 +135,11 @@ open-source personal finance analytics library.
 
   \item \lbox{https://pubs.acs.org/doi/full/10.1021/acs.chemmater.2c02991}{Polymer informatics at scale with multitask graph neural networks.}
     R Gurnani, C Kuenneth, A Toland, R Ramprasad. \textit{Chemistry of Materials} 35 (4), 2023. \textit{(106 citations)}
-
   \item \lbox{https://rishigurnani.files.wordpress.com/2021/08/polyg2g-a-novel-machine-learning-algorithm-applied-to-the-generative-design-of-polymer-dielectrics.pdf}{PolyG2G: A novel machine learning algorithm applied to the generative design of polymer dielectrics.}
     R Gurnani, D Kamal, H Tran et al. \textit{Chemistry of Materials} 33 (17), 2021. \textit{(82 citations)}
-
   \item \lbox{https://www.nature.com/articles/s41578-024-00708-8}{Design of functional and sustainable polymers assisted by artificial intelligence.}
     H Tran, R Gurnani, C Kim et al. \textit{Nature Reviews Materials} 9 (12), 2024. \textit{(198 citations)}
-
+  % 2025
   \item Stereoisomerism of Vicinal Polydichloronorbornene for Ultra-High-Temperature Capacitive Energy Storage.
     J Hao, S Shukla, R Gurnani et al. \textit{Advanced Materials} 37 (15), 2025.
 
@@ -165,11 +152,15 @@ open-source personal finance analytics library.
   \item Polymer composites informatics for flammability, thermal, mechanical and electrical property predictions.
     H Tran, C Kim, R Gurnani et al. \textit{Polymer Chemistry} 16 (30), 2025.
 
+  % 2024
+
   \item Gas permeability, diffusivity, and solubility in polymers: Simulation-experiment data fusion and multi-task machine learning.
     BK Phan, KH Shen, R Gurnani et al. \textit{npj Computational Materials} 10 (1), 2024.
 
   \item Pendant group functionalization of cyclic olefin for high temperature and high-density energy storage.
     S Shukla, C Wu, A Mishra, R Gurnani et al. \textit{Advanced Materials} 36 (52), 2024.
+
+  % 2023
 
   \item Effect of fluorine in redesigning energy-storage properties of high-temperature dielectric polymers.
     AA Deshmukh, C Wu, R Gurnani et al. \textit{ACS Applied Materials \& Interfaces} 15 (40), 2023.
@@ -177,15 +168,20 @@ open-source personal finance analytics library.
   \item Identifying High-Performance Metal-Organic Frameworks for Low-Temperature Oxygen Recovery from Helium by Computational Screening.
     S Jamdade, R Gurnani, H Fang, SE Boulfelfel, R Ramprasad, DS Sholl. \textit{Industrial \& Engineering Chemistry Research} 62 (4), 2023.
 
+  % 2021
+
   \item Interpretable machine learning-based predictions of methane uptake isotherms in metal-organic frameworks.
     R Gurnani, Z Yu, C Kim, DS Sholl, R Ramprasad. \textit{Chemistry of Materials} 33 (10), 2021.
 
+  % 2020
   \item \lbox{https://rishigurnani.wordpress.com/wp-content/uploads/2020/11/5.0023759.pdf}{Machine-learning predictions of polymer properties with Polymer Genome.}
     H Doan Tran, C Kim, L Chen, R Gurnani et al. \textit{Journal of Applied Physics} 128 (17), 2020. \textit{(320 citations)}
 
+  % 2018
   \item Experimental characterization of the shear properties of 3D-printed ABS and polycarbonate parts.
     S Rohde, J Cantrell, R Gurnani et al. \textit{Experimental Mechanics} 58 (6), 2018.
 
+  % 2017
   \item Experimental characterization of the mechanical properties of 3D-printed ABS and polycarbonate parts.
     JT Cantrell, S Rohde, D Damiani, R Gurnani et al. \textit{Rapid Prototyping Journal} 23 (4), 2017. \textit{(777 citations)}
 
